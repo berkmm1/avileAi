@@ -1,0 +1,4 @@
+body{font-family:Inter,Arial,sans-serif;margin:0;background:#071028;color:#e6eef8}
+.wrap{max-width:900px;margin:24px auto;padding:16px}
+input,textarea{width:100%;padding:8px;margin-top:8px;border-radius:8px;border:1px solid #233}
+button{padding:8px 12px;background:#6ee7b7;color:#002;border:none;border-radius:8px;cursor:pointer}
