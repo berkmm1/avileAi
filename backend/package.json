@@ -1,0 +1,31 @@
+{
+  "name": "aliveai-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "worker": "node src/workers/worker.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "mongoose": "^7.0.0",
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "winston": "^3.8.2",
+    "bullmq": "^1.81.0",
+    "ioredis": "^5.3.2",
+    "node-fetch": "^3.3.2",
+    "body-parser": "^1.20.2",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.8.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "supertest": "^7.0.0"
+  }
+}

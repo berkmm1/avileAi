@@ -1,0 +1,41 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:6
+    ports: ['27017:27017']
+    volumes:
+      - mongo_data:/data/db
+
+  redis:
+    image: redis:7
+    ports: ['6379:6379']
+
+  backend:
+    build: ./backend
+    ports:
+      - '4000:4000'
+    env_file:
+      - ./backend/.env.example
+    depends_on:
+      - mongo
+      - redis
+
+  worker:
+    build: ./backend
+    command: node src/workers/worker.js
+    env_file:
+      - ./backend/.env.example
+    depends_on:
+      - mongo
+      - redis
+
+  frontend:
+    build: ./frontend
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - '5173:5173'
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:

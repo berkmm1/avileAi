@@ -1,0 +1,13 @@
+body{font-family:Inter,Arial,sans-serif;margin:0;background:#071028;color:#e6eef8}
+.wrap{max-width:1080px;margin:24px auto;padding:16px;display:grid;gap:16px}
+.topbar{display:flex;justify-content:space-between;align-items:center}
+.card,.quantum-panel{padding:16px;border:1px solid #2b3a62;border-radius:12px;background:#0c1838}
+input,textarea{width:100%;padding:10px;margin-top:8px;border-radius:8px;border:1px solid #233;background:#08142d;color:#e6eef8}
+button{margin-top:8px;padding:8px 12px;background:#6ee7b7;color:#002;border:none;border-radius:8px;cursor:pointer}
+ul{padding-left:18px}
+.pyramid{display:grid;gap:10px;margin-top:10px}
+.layer-card{padding:12px;border-radius:10px;border:1px solid #3c4f85;background:#10224d}
+.flow-line{padding:10px;border-radius:8px;background:#10224d;border:1px dashed #4a62a1}
+.answer{white-space:pre-wrap;background:#10224d;padding:10px;border-radius:8px}
+.decision-box{margin-top:10px;padding:10px;background:#10224d;border-radius:8px;border:1px solid #3c4f85}
+.error{color:#ff8f8f}
